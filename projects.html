@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Youssef Elebiary | Projects</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Portfolio projects of Youssef Elebiary, a Software Engineer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+        <!-- Icon -->
+        <link rel="icon" type="image/png" sizes="64x64" href="./src/icon.png">
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="./index.html">YE</a>
+                </div>
+                <nav>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./projects.html" class="nav-link active">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./certificates.html" class="nav-link">Certificates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link contact-btn">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-cont">
+            <section class="projects-section">
+                <div class="section-header">
+                    <h2 class="section-title">My Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="projects-container">
+                    <!-- TruthGuard -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/TruthGuard.png" alt="TruthGuard">
+                            </div>
+                            <div class="project-details">
+                                <h2>TruthGuard</h2>
+                                <p class="project-description">
+                                    A web application that uses machine learning algorithms (XGBoost and LightGBM) to detect fake news.
+                                    Users can input text and select the desired model (standard or lite) and the prediction of the model will be displayed.
+                                </p>
+                                <ul class="project-features">
+                                    <li>Predicting whether a given text is fake or real.</li>
+                                    <li>Supports XGBoost and LightGBM prediction.</li>
+                                    <li>Simple and responsive web interface.</li>
+                                    <li>Automatic cleaning and preprocessing of the given text for accurate predictions.</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/TruthGuard/" class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- NoMoreSpam -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/NoMoreSpam.png" alt="NoMoreSpam">
+                            </div>
+                            <div class="project-details">
+                                <h2>NoMoreSpam</h2>
+                                <p class="project-description">
+                                    A web application that uses a machine learning algorithm (SVM) to classify if an email is spam or ham.
+                                    Users can input the text content of the email and the model will display its prediction with the percentage of the email being spam.
+                                </p>
+                                <ul class="project-features">
+                                    <li>Predicting whether the given text is spam or ham.</li>
+                                    <li>Displays the likelihood of the email being spam.</li>
+                                    <li>Simple and responsive web interface.</li>
+                                    <li>Automatic cleaning and preprocessing of the given text for accurate predictions.</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/NoMoreSpam/" class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PhotoWizard -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/PhotoWizard.png" alt="PhotoWizard">
+                            </div>
+                            <div class="project-details">
+                                <h2>PhotoWizard</h2>
+                                <span class="project-badge">University Project</span>
+                                <p class="project-description">
+                                    A GUI app used to apply different filters to images in various file formats developed with C++ and the Qt framework
+                                </p>
+                                <ul class="project-features">
+                                    <li>Applying multiple filters</li>
+                                    <li>Live preview of modifications</li>
+                                    <li>Removing all applied filters</li>
+                                    <li>Undoing last applied filter</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/PhotoWizard/" class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- RecipeHub -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/RecipeHub.png" alt="RecipeHub">
+                            </div>
+                            <div class="project-details">
+                                <h2>RecipeHub</h2>
+                                <span class="project-badge">University Project</span>
+                                <p class="project-description">
+                                    A platform for viewing cooking recipes with a simple UI, providing the user with the ability to search and filter recipes.
+                                    Providing the ability to seek help from Semsema the builtin AI Agent that can answer questions.
+                                </p>
+                                <ul class="project-features">
+                                    <li>Giveing the ability to search for recipes with their name.</li>
+                                    <li>Filtering recipes according to their type or ingredients or both.</li>
+                                    <li>Chatting with Semsema to help in using the website.</li>
+                                    <li>Saving favorite recipes.</li>
+                                    <li> Simple and responsive web interface.</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/RecipeHub/" class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PDFToolKit -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/PDFToolKit.png" alt="PDFToolKit">
+                            </div>
+                            <div class="project-details">
+                                <h2>PDFToolKit</h2>
+                                <p class="project-description">
+                                    A GUI app used to modify PDF files, developed with Python and customtkinter
+                                </p>
+                                <ul class="project-features">
+                                    <li>Splitting a PDF file at a given page number</li>
+                                    <li>Merging two PDF files</li>
+                                    <li>Extracting a page from a PDF file</li>
+                                    <li>Inserting a PDF file at a specific position</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/PDFToolKit/" class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- MerkelRex -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/MerkelRex.png" alt="MerkelRex">
+                            </div>
+                            <div class="project-details">
+                                <div class="project-header">
+                                    <h2>MerkelRex</h2>
+                                    <span class="project-badge">Object Oriented Programming Certificate Project</span>
+                                </div>
+                                <p class="project-description">
+                                    A console-based app used to simulate cryptocurrency trading implementing the Merkle tree, developed with C++
+                                </p>
+                                <ul class="project-features">
+                                    <li>Reading data from CSV files</li>
+                                    <li>Simulating moving through time</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/MerkelRex/" class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- ConcreteCracks -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/ConcreteCracks.png" alt="ConcreteCracks">
+                            </div>
+                            <div class="project-details">
+                                <div class="project-header">
+                                    <h2>ConcreteCracks</h2>
+                                    <span class="project-badge">IBM AI Engineering Certificate Project</span>
+                                </div>
+                                <p class="project-description">
+                                    A deep learning computer vision AI model used to detect cracks in concrete using ResNet18, developed with Python
+                                </p>
+                                <ul class="project-features">
+                                    <li>Classifying images according to the presence of cracks</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/ConcreteCracks/" class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CSVsmith -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/CSVsmith.png" alt="CSVsmith">
+                            </div>
+                            <div class="project-details">
+                                <h2>CSVsmith</h2>
+                                <p class="project-description">
+                                    A GUI app used to view and modify CSV files in a tabular form, developed with C++ and the Qt framework
+                                </p>
+                                <ul class="project-features">
+                                    <li>Viewing CSV files</li>
+                                    <li>Modifying CSV files</li>
+                                    <li>Inserting/Deleting rows and columns</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/CSVsmith/" class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- LowLevelMachine -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/LowLevelMachine.png" alt="LowLevelMachine">
+                            </div>
+                            <div class="project-details">
+                                <h2>LowLevelMachine</h2>
+                                <p class="project-description">
+                                    A console-based app used to simulate how programs run at a low-level, developed with C++
+                                </p>
+                                <ul class="project-features">
+                                    <li>Supporting 13 different instructions</li>
+                                    <li>Storing integers in 2's complement format</li>
+                                    <li>Storing floating point numbers in 8 bits</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/LowLevelMachine/" class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Course Management System -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/CourseManagementSystem.png" alt="Course Management System">
+                            </div>
+                            <div class="project-details">
+                                <h2>Course Management System</h2>
+                                <span class="project-badge">University Project</span>
+                                <p class="project-description">
+                                    A Course Management System developed using Microsoft SQL Server for the database management and C# for the user interface.
+                                    Providing functionality for managing students, instructors, courses, and enrollments in an academic environment.
+                                </p>
+                                <ul class="project-features">
+                                    <li>Managing students and instructors</li>
+                                    <li>Adding and assigning courses</li>
+                                    <li>Recording and updating grades</li>
+                                    <li>Viewing detailed reports using SQL queries</li>
+                                    <li>User-friendly interface</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/Course-Management-System/" class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="contact-content">
+                    <p class="contact-text">
+                        I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll do my best to get back to you!
+                    </p>
+                    <a href="mailto:youssefelebiary2005@gmail.com" class="btn primary-btn contact-btn">
+                        <i class="fas fa-envelope"></i> Send Me an Email
+                    </a>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/youssef-elebiary/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/YoussefElebiary" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.kaggle.com/youssefelebiary" class="social-link"><i class="fab fa-kaggle"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">YE</div>
+                <div class="footer-links">
+                    <a href="./index.html">About</a>
+                    <a href="./projects.html">Projects</a>
+                    <a href="./certificates.html">Certificates</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; <span id="year"></span> Youssef Elebiary. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
