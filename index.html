@@ -56,13 +56,16 @@
                 <nav>
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a href="./index.html" class="nav-link active">About</a>
+                            <a href="#about" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./projects.html" class="nav-link">Projects</a>
+                            <a href="#experience" class="nav-link">Experience</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./certificates.html" class="nav-link">Certificates</a>
+                            <a href="#projects" class="nav-link">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#certificates" class="nav-link">Certificates</a>
                         </li>
                         <li class="nav-item">
                             <a href="#contact" class="nav-link contact-btn">Contact</a>
@@ -117,7 +120,7 @@
                         </p>
                         <div class="about-stats">
                             <div class="stat-item">
-                                <h3>800+</h3>
+                                <h3>900+</h3>
                                 <p>LeetCode Problems Solved</p>
                             </div>
                             <div class="stat-item">
@@ -131,6 +134,53 @@
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="experience-section">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <ul class="timeline">
+                    <!-- Entry 1 -->
+                    <li class="timeline-item left">
+                        <div class="timeline-content">
+                            <span class="timeline-date"><time datetime="2026-01">Jan 2026</time> - Present</span>
+                            <article>
+                                <h3 class="timeline-title">Head of AI & Data Science</h3>
+                                <h4 class="timeline-subtitle">MSP Tech Club</h4>
+                                <p class="timeline-desc">Leading the AI & Data Science committee, mentoring members, and organizing technical workshops. Previously participated in community initiatives.</p>
+                                <p class="timeline-desc" style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--dark-gray);"><em>Previously: AI Committee Member (<time datetime="2025-05">May 2025</time> – <time datetime="2025-12">Dec 2025</time>)</em></p>
+                            </article>
+                        </div>
+                    </li>
+                    
+                    <!-- Entry 2 -->
+                    <li class="timeline-item right">
+                        <div class="timeline-content">
+                            <span class="timeline-date"><time datetime="2025-08">Aug 2025</time> - <time datetime="2025-09">Sep 2025</time></span>
+                            <article>
+                                <h3 class="timeline-title">Information Technology Intern</h3>
+                                <h4 class="timeline-subtitle">Future Pharmaceutical Industries (FPi)</h4>
+                                <p class="timeline-desc">Contributed to an Order Receiving mobile app (Kotlin + Django) integrated with JD Edwards ERP. Enhanced task management system with teamwork features.</p>
+                            </article>
+                        </div>
+                    </li>
+                    
+                    <!-- Entry 3 -->
+                    <li class="timeline-item left">
+                        <div class="timeline-content">
+                            <span class="timeline-date"><time datetime="2025-07">Jul 2025</time> - <time datetime="2025-08">Aug 2025</time></span>
+                            <article>
+                                <h3 class="timeline-title">NLP Engineer Intern</h3>
+                                <h4 class="timeline-subtitle">Elevvo Pathways</h4>
+                                <p class="timeline-desc">Designed NLP pipelines, fine-tuned transformer models, and deployed lightweight inference applications.</p>
+                            </article>
+                        </div>
+                    </li>
+                </ul>
             </section>
             
             <!--
@@ -356,6 +406,476 @@
                 </div>
             </section>
 
+            <!-- Projects Section -->
+            <section id="projects" class="projects-section">
+                <div class="section-header">
+                    <h2 class="section-title">My Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="projects-container">
+                    <!-- RescuNet -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/RescuNet.png" alt="RescuNet">
+                            </div>
+                            <div class="project-details">
+                                <div class="project-header">
+                                    <h3>RescuNet</h3>
+                                    <span class="project-badge">DEPI Graduation Project</span>
+                                </div>
+                                <p class="project-description">
+                                    A comprehensive disaster response platform that leverages Multimodal AI to coordinate
+                                    rescue operations. By fusing aerial surveillance (YOLOv11), Graph Neural Networks (GNN),
+                                    and NLP, it enables dynamic routing on damaged roads and automated triage of distress
+                                    signals.
+                                </p>
+                                <ul class="project-features">
+                                    <li>Dynamic routing via GNN safety prediction and millisecond-level C++ engine.</li>
+                                    <li>Real-time survivor & hazard detection using dual-spectrum drone feeds.</li>
+                                    <li>Automated distress message triage with multi-level priority classification.</li>
+                                    <li>Interactive React website with live map visualization and instant route inference.
+                                    </li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/RescuNet/" target="_blank"
+                                        class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- VisionScribe -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/VisionScribe.png" alt="VisionScribe">
+                            </div>
+                            <div class="project-details">
+                                <div class="project-header">
+                                    <h3>VisionScribe</h3>
+                                    <span class="project-badge">Huawei HCIP-AI</span>
+                                </div>
+                                <p class="project-description">
+                                    An intelligent web application that generates descriptive captions for uploaded images.
+                                    Using deep learning techniques, it analyzes visual content and produces human-like
+                                    descriptions, powered by a custom-trained model based on InceptionV3 and LSTM
+                                    architectures.
+                                </p>
+                                <ul class="project-features">
+                                    <li>Upload any image and get an accurate description.</li>
+                                    <li>Combines InceptionV3 for feature extraction with LSTM for sequence generation.</li>
+                                    <li>Advanced text generation algorithm for coherent descriptions.</li>
+                                    <li>User-friendly web interface for easy interaction.</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/VisionScribe/" target="_blank"
+                                        class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ConcreteCracks -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/ConcreteCracks.png" alt="ConcreteCracks">
+                            </div>
+                            <div class="project-details">
+                                <div class="project-header">
+                                    <h3>ConcreteCracks</h3>
+                                    <span class="project-badge">IBM AI Engineering Certificate Project</span>
+                                </div>
+                                <p class="project-description">
+                                    A deep learning computer vision AI model used to detect cracks in concrete using
+                                    ResNet18, developed with Python
+                                </p>
+                                <ul class="project-features">
+                                    <li>Classifying images according to the presence of cracks</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/ConcreteCracks/" target="_blank"
+                                        class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- TruthGuard -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/TruthGuard.png" alt="TruthGuard">
+                            </div>
+                            <div class="project-details">
+                                <h3>TruthGuard</h3>
+                                <p class="project-description">
+                                    A web application that uses machine learning algorithms (XGBoost and LightGBM) to detect
+                                    fake news.
+                                    Users can input text and select the desired model (standard or lite) and the prediction
+                                    of the model will be displayed.
+                                </p>
+                                <ul class="project-features">
+                                    <li>Predicting whether a given text is fake or real.</li>
+                                    <li>Supports XGBoost and LightGBM prediction.</li>
+                                    <li>Simple and responsive web interface.</li>
+                                    <li>Automatic cleaning and preprocessing of the given text for accurate predictions.
+                                    </li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/TruthGuard/" target="_blank"
+                                        class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- NoMoreSpam -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/NoMoreSpam.png" alt="NoMoreSpam">
+                            </div>
+                            <div class="project-details">
+                                <h3>NoMoreSpam</h3>
+                                <p class="project-description">
+                                    A web application that uses a machine learning algorithm (SVM) to classify if an email
+                                    is spam or ham.
+                                    Users can input the text content of the email and the model will display its prediction
+                                    with the percentage of the email being spam.
+                                </p>
+                                <ul class="project-features">
+                                    <li>Predicting whether the given text is spam or ham.</li>
+                                    <li>Displays the likelihood of the email being spam.</li>
+                                    <li>Simple and responsive web interface.</li>
+                                    <li>Automatic cleaning and preprocessing of the given text for accurate predictions.
+                                    </li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/NoMoreSpam/" target="_blank"
+                                        class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- RecipeHub -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/RecipeHub.png" alt="RecipeHub">
+                            </div>
+                            <div class="project-details">
+                                <h3>RecipeHub</h3>
+                                <span class="project-badge">University Project</span>
+                                <p class="project-description">
+                                    A platform for viewing cooking recipes with a simple UI, providing the user with the
+                                    ability to search and filter recipes.
+                                    Providing the ability to seek help from Semsema the builtin AI Agent that can answer
+                                    questions.
+                                </p>
+                                <ul class="project-features">
+                                    <li>Giveing the ability to search for recipes with their name.</li>
+                                    <li>Filtering recipes according to their type or ingredients or both.</li>
+                                    <li>Chatting with Semsema to help in using the website.</li>
+                                    <li>Saving favorite recipes.</li>
+                                    <li> Simple and responsive web interface.</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/RecipeHub/" target="_blank"
+                                        class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PhotoWizard -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/PhotoWizard.png" alt="PhotoWizard">
+                            </div>
+                            <div class="project-details">
+                                <h3>PhotoWizard</h3>
+                                <span class="project-badge">University Project</span>
+                                <p class="project-description">
+                                    A GUI app used to apply different filters to images in various file formats developed
+                                    with C++ and the Qt framework
+                                </p>
+                                <ul class="project-features">
+                                    <li>Applying multiple filters</li>
+                                    <li>Live preview of modifications</li>
+                                    <li>Removing all applied filters</li>
+                                    <li>Undoing last applied filter</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/PhotoWizard/" target="_blank"
+                                        class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CSVsmith -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/CSVsmith.png" alt="CSVsmith">
+                            </div>
+                            <div class="project-details">
+                                <h3>CSVsmith</h3>
+                                <p class="project-description">
+                                    A GUI app used to view and modify CSV files in a tabular form, developed with C++ and
+                                    the Qt framework
+                                </p>
+                                <ul class="project-features">
+                                    <li>Viewing CSV files</li>
+                                    <li>Modifying CSV files</li>
+                                    <li>Inserting/Deleting rows and columns</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/CSVsmith/" target="_blank"
+                                        class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Course Management System -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/CourseManagementSystem.png" alt="Course Management System">
+                            </div>
+                            <div class="project-details">
+                                <h3>Course Management System</h3>
+                                <span class="project-badge">University Project</span>
+                                <p class="project-description">
+                                    A Course Management System developed using Microsoft SQL Server for the database
+                                    management and C# for the user interface.
+                                    Providing functionality for managing students, instructors, courses, and enrollments in
+                                    an academic environment.
+                                </p>
+                                <ul class="project-features">
+                                    <li>Managing students and instructors</li>
+                                    <li>Adding and assigning courses</li>
+                                    <li>Recording and updating grades</li>
+                                    <li>Viewing detailed reports using SQL queries</li>
+                                    <li>User-friendly interface</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/Course-Management-System/" target="_blank"
+                                        class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PDFToolKit -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/PDFToolKit.png" alt="PDFToolKit">
+                            </div>
+                            <div class="project-details">
+                                <h3>PDFToolKit</h3>
+                                <p class="project-description">
+                                    A GUI app used to modify PDF files, developed with Python and customtkinter
+                                </p>
+                                <ul class="project-features">
+                                    <li>Splitting a PDF file at a given page number</li>
+                                    <li>Merging two PDF files</li>
+                                    <li>Extracting a page from a PDF file</li>
+                                    <li>Inserting a PDF file at a specific position</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/PDFToolKit/" target="_blank"
+                                        class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- MerkelRex -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/MerkelRex.png" alt="MerkelRex">
+                            </div>
+                            <div class="project-details">
+                                <div class="project-header">
+                                    <h3>MerkelRex</h3>
+                                    <span class="project-badge">Object Oriented Programming Certificate Project</span>
+                                </div>
+                                <p class="project-description">
+                                    A console-based app used to simulate cryptocurrency trading implementing the Merkle
+                                    tree, developed with C++
+                                </p>
+                                <ul class="project-features">
+                                    <li>Reading data from CSV files</li>
+                                    <li>Simulating moving through time</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/MerkelRex/" target="_blank"
+                                        class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- LowLevelMachine -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-image">
+                                <img src="./src/projects/LowLevelMachine.png" alt="LowLevelMachine">
+                            </div>
+                            <div class="project-details">
+                                <h3>LowLevelMachine</h3>
+                                <p class="project-description">
+                                    A console-based app used to simulate how programs run at a low-level, developed with C++
+                                </p>
+                                <ul class="project-features">
+                                    <li>Supporting 13 different instructions</li>
+                                    <li>Storing integers in 2's complement format</li>
+                                    <li>Storing floating point numbers in 8 bits</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a href="https://github.com/YoussefElebiary/LowLevelMachine/" target="_blank"
+                                        class="btn primary-btn">
+                                        <i class="fab fa-github"></i> View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Certificates Section -->
+            <section id="certificates" class="certificates-section">
+                <div class="section-header">
+                    <h2 class="section-title">My Certificates</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Professional certifications and courses I've completed to enhance my skills</p>
+                </div>
+                
+                <div class="certificates-container">
+                    <!-- DEPI Certificate -->
+                    <article class="certificate-card">
+                        <div class="certificate-image">
+                            <img src="./src/certificates/DEPI.png" alt="DEPI Certificate">
+                        </div>
+                        <div class="certificate-content">
+                            <h3>Digital Egypt Pioneers Initiative (DEPI)</h3>
+                            <p>Fundamentals of AI and Deep Learning</p>
+                            <div class="certificate-footer">
+                                <span class="certificate-issuer"><i class="fas fa-building"></i> MCIT</span>
+                                <a href="https://drive.google.com/file/d/1sVm9EqjXiYtC8AtjO_bZliwXEf0zmgM5/view?usp=drive_link" class="btn primary-btn" target="_blank">View Certificate</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- IBM AI Certificate -->
+                    <article class="certificate-card">
+                        <div class="certificate-image">
+                            <img src="./src/certificates/IBM_AI.png" alt="IBM AI Engineer Certificate">
+                        </div>
+                        <div class="certificate-content">
+                            <h3>IBM AI Engineering</h3>
+                            <p>Fundamentals of machine learning and AI, use of Python libraries and computer vision</p>
+                            <div class="certificate-footer">
+                                <span class="certificate-issuer"><i class="fas fa-building"></i> IBM via Coursera</span>
+                                <a href="https://coursera.org/share/802d79bcc226a58ad85b9f2b69382962" class="btn primary-btn" target="_blank">View Certificate</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Huawei HCIA Certificate -->
+                    <article class="certificate-card">
+                        <div class="certificate-image">
+                            <img src="./src/certificates/HCIA.png" alt="Huawei HCIA-AI Certificate">
+                        </div>
+                        <div class="certificate-content">
+                            <h3>Huawei HCIA-AI</h3>
+                            <p>Fundamentals of machine learning and AI and an introduction to deep learning</p>
+                            <div class="certificate-footer">
+                                <span class="certificate-issuer"><i class="fas fa-building"></i> Huawei</span>
+                                <a href="https://drive.google.com/file/d/1fhPrlrZWQXkfe5TIkfd-35Ji56xfjrOu/view?usp=drive_link" class="btn primary-btn" target="_blank">View Certificate</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Google Cybersecurity Certificate -->
+                    <article class="certificate-card">
+                        <div class="certificate-image">
+                            <img src="./src/certificates/Cybersecurity.png" alt="Google Cybersecurity Certificate">
+                        </div>
+                        <div class="certificate-content">
+                            <h3>Google Cybersecurity</h3>
+                            <p>Fundamentals of cybersecurity, assisting tools and terms</p>
+                            <div class="certificate-footer">
+                                <span class="certificate-issuer"><i class="fas fa-building"></i> Google via Coursera</span>
+                                <a href="https://coursera.org/share/825aeeebcba08a39a3f24c3fbda1db4c" class="btn primary-btn" target="_blank">View Certificate</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- OOP London Certificate -->
+                    <article class="certificate-card">
+                        <div class="certificate-image">
+                            <img src="./src/certificates/OOP.png" alt="OOP Certificate">
+                        </div>
+                        <div class="certificate-content">
+                            <h3>Object Oriented Programming</h3>
+                            <p>C++ basics and the Object Oriented paradigm</p>
+                            <div class="certificate-footer">
+                                <span class="certificate-issuer"><i class="fas fa-building"></i> University of London</span>
+                                <a href="https://coursera.org/share/772d38f0fcb3d5664570e33b2ccd5711" class="btn primary-btn" target="_blank">View Certificate</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Google AI Essentials Certificate -->
+                    <article class="certificate-card">
+                        <div class="certificate-image">
+                            <img src="./src/certificates/AI_Essentials.png" alt="Google AI Essentials Certificate">
+                        </div>
+                        <div class="certificate-content">
+                            <h3>Google AI Essentials</h3>
+                            <p>Utilizing AI tools to increase productivity</p>
+                            <div class="certificate-footer">
+                                <span class="certificate-issuer"><i class="fas fa-building"></i> Google via Coursera</span>
+                                <a href="https://coursera.org/share/b1f2c68a936f338b4bcadf33724b566d" class="btn primary-btn" target="_blank">View Certificate</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
             <section id="contact" class="contact-section">
                 <div class="section-header">
                     <h2 class="section-title">Get In Touch</h2>
@@ -401,9 +921,10 @@
             <div class="footer-content">
                 <div class="footer-logo">YE</div>
                 <div class="footer-links">
-                    <a href="./index.html">About</a>
-                    <a href="./projects.html">Projects</a>
-                    <a href="./certificates.html">Certificates</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#certificates">Certificates</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="footer-copyright">
